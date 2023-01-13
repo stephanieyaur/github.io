@@ -1,0 +1,20 @@
+#nianticTop{
+    background-color: #ff714e;
+}
+
+.projectApp h4 {
+    color: #EF4B23;
+}
+
+.projectApp h5 {
+    font-size: xx-large;
+    font-weight: 300;
+    color: rgb(255, 180, 202);
+    margin-bottom: 0;
+    margin-top: 40px;
+}
+
+#nianticimage {
+    /* height: 300px; */
+    /* width: auto; */
+}

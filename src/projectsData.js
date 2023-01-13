@@ -11,9 +11,18 @@ import AmexSquare from "./project_images/amex/square.png";
 // import DistributedMetronomeSquare from "./project_images/distributed_metronome/square.png";
 // import DistributedMetronomeMain from "./project_images/distributed_metronome/main.png";
 import WeatherAppMain from "./project_images/weather_app/main.png";
-
+import NianticSquare from "./project_images/niantic/square.png";
 
 let projectsData = [
+    {
+        name: "Niantic",
+        description: "Summer 2022 full stack Pokemon Go intern projects",
+        backgroundImage: NianticSquare,
+        mainImage: NianticSquare,
+        position: "Full Stack Developer",
+        skills: ["Java", "C#", "Unity"],
+        url: "niantic"
+    },
     {
         name: "Freedom Link",
         description: "Web app resulting in email request to petition for the early release of a prisoner from the Illinois Department of Corrections.",

@@ -13,6 +13,7 @@ import Siemens from './Projects/Siemens';
 import DistributedMetronome from './Projects/DistributedMetronome';
 import Amex from './Projects/Amex';
 import FarFromHome from './Projects/FarFromHome';
+import Niantic from './Projects/Niantic';
 
 const App = () => {
   return (
@@ -47,6 +48,7 @@ const App = () => {
           <Route path="/projects/siemens-healthineers" element={<Siemens/>} />
           <Route path="/projects/far-from-home" element={<FarFromHome/>} />
           <Route path="/projects/philips" element={<Philips/>} />
+          <Route path="/projects/niantic" element={<Niantic/>} />
           <Route path="/skills" element={<Skills/>} />
         </Routes>
       </BrowserRouter>
