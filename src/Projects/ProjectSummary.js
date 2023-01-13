@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import projectsData from "../projectsData";
 
 import "./FreedomLink.css";
@@ -13,22 +13,21 @@ const findProject = () => {
 
 const FreedomLink = () => {
 
-    const [project, setProject] = useState(findProject());
-    const [skills, setSkills] = useState(null);
+    const project = findProject();
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
 
-    useEffect(() => {
+    const populateSkills = () => {
+        var skills = null;
         if (project && project.skills){
-            setSkills(project.skills.map((skill) => {
-                return(
-                    <div className="button white">{skill}</div>
-                    )
-            }))
+            skills = (project.skills.map((skill) => (
+                    <div key={skill} className="button white">{skill}</div>
+                    )));
         }
-    }, project)
+        return skills;
+    }
 
     return(
         <div>
@@ -39,7 +38,7 @@ const FreedomLink = () => {
                     <br/>
                     <div className="textInline"><p>position: </p><div className="button white">{project.position}</div></div>
                     <br/>
-                    <div className="textInline"><p>skills: </p>{skills}</div>
+                    <div className="textInline"><p>skills: </p>{populateSkills()}</div>
                     <br />
                 </div>
                 <img className="mainImage" src={project.mainImage} alt="project image"></img>

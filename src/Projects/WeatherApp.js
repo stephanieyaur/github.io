@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import NavBar from "../NavBar";
 import projectsData from "../projectsData";
 
@@ -7,29 +7,28 @@ import "./WeatherApp.css";
 const findProject = () => {
     for (var i=0; i < projectsData.length; i++){
         if (projectsData[i].name === "Weather App"){
-            return projectsData[i]
+            return projectsData[i];
         }
     }
 }
 
 const WeatherApp = () => {
 
-    const project = findProject();
-    const [skills, setSkills] = useState(null);
+    var project = findProject();
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
 
-    useEffect(() => {
+    const populateSkills = () => {
+        var skills = null;
         if (project && project.skills){
-            setSkills(project.skills.map((skill) => {
-                return(
+            skills = (project.skills.map((skill) => (
                     <div key={skill} className="button white">{skill}</div>
-                    )
-            }))
+                    )));
         }
-    }, [project])
+        return skills;
+    }
 
     return(
         <div className="weatherApp">
@@ -41,7 +40,7 @@ const WeatherApp = () => {
                     <br/>
                     <div className="textInline"><p>position: </p><div className="button white">{project.position}</div></div>
                     <br/>
-                    <div className="textInline"><p>skills: </p>{skills}</div>
+                    <div className="textInline"><p>skills: </p>{populateSkills()}</div>
                     <br />
                 </div>
                 <img className="mainImage" src={project.mainImage} alt=""></img>

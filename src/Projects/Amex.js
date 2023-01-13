@@ -7,7 +7,7 @@ import "./Amex.css";
 const findProject = () => {
     for (var i=0; i < projectsData.length; i++){
         if (projectsData[i].name === "American Express"){
-            return projectsData[i]
+            return projectsData[i];
         }
     }
 }
@@ -15,21 +15,20 @@ const findProject = () => {
 const Amex = () => {
 
     const project = findProject();
-    const [skills, setSkills] = useState(null);
 
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
 
-    useEffect(() => {
+    const populateSkills = () => {
+        var skills = null;
         if (project && project.skills){
-            setSkills(project.skills.map((skill) => {
-                return(
+            skills = (project.skills.map((skill) => (
                     <div key={skill} className="button white">{skill}</div>
-                    )
-            }))
+                    )));
         }
-    }, [project])
+        return skills;
+    }
 
     return(
         <div className="amex">
@@ -41,7 +40,7 @@ const Amex = () => {
                     <br/>
                     <div className="textInline"><p>position: </p><div className="button white">{project.position}</div></div>
                     <br/>
-                    <div className="textInline"><p>skills: </p>{skills}</div>
+                    <div className="textInline"><p>skills: </p>{populateSkills()}</div>
                     <br />
                 </div>
                 <img className="mainImageSquare" src={project.mainImage} alt=""></img>
