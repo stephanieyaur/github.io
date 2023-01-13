@@ -1,0 +1,48 @@
+p {
+    font-size: large;
+}
+
+.aboutHeader {
+    align-items: center;
+    /* background-color: darkmagenta; */
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.leftText {
+    background-color: darkkhaki;
+    grid-column: 1;
+    /* grid-row: 1 / 2; */
+}
+
+.name {
+    font-size: 150px;
+    margin-top: -40px;
+    font-weight: bold;
+    font-style: italic;
+    color: #FF9B8E;
+}
+
+#Stephanie {
+    height:90%;
+    width: 90%;
+    border-radius: 50%;
+    border-color: white;
+    border-style: dotted;
+    border-width: 2px;
+    padding: 10px;
+}
+
+.center {
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* background-color: rgb(158, 165, 158); */
+    grid-column: 2;
+    /* grid-row: 1 / 2; */
+}
+
+.aboutme {
+    margin-top: 5vh;
+}

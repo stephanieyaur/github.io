@@ -1,0 +1,194 @@
+.projectItem {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgroundImage {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.hoverLayer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.93);
+    visibility: hidden;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    text-align: center !important;
+}
+
+.hoverLayer h3 {
+    text-align: center;
+}
+
+.projectItem:hover .hoverLayer{
+    visibility: visible;
+    opacity: 1;
+}
+
+h3 {
+    font-size: xx-large;
+}
+
+h4 {
+    font-size: xx-large;
+    margin: 10px 0;
+    font-weight: 300;
+}
+
+b {
+    font-weight: 500;
+    /* color: #F4F2C4; */
+}
+
+.projectTop {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    /* align-items: center;
+    justify-content: center; */
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #FF9B8E;
+    /* color: black; */
+}
+
+.textInline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    /* background-color: white; */
+    padding: 30px;
+    text-align: left;
+}
+
+.textSection {
+    margin-bottom: 40px;
+}
+
+
+.textAndImageContainer {
+    display: flex;
+}
+
+.imageContainer {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: fit-content;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+.interface {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: fit-content;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(163, 163, 163);
+}
+
+.contentSection {
+    text-align: left;
+    color: black;
+    padding: 30px;
+    display: flex;
+    border-top:rgb(163, 163, 163);
+    border-width: 1px;
+    border-style: solid;
+}
+
+#step1 {
+    background-color: white;
+}
+
+.numberAndTitle{
+    width: 30vw;
+}
+
+.stepNumber {
+    font-size: 100px;
+    font-style: italic;
+}
+
+/* Modal */
+p{
+    font-weight: lighter;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.modal {
+    width: fit-content;
+    max-width: 90vw;
+    max-height: 90vh;
+    height: fit-content;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: white;
+    color: black;
+    border-width: 1px;
+    border-color: gray;
+    border-style: solid;
+    text-align: left;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.title{
+    margin: 0;
+    font-size: 50px;
+}
+
+.description {
+    margin-top: 0;
+}
+
+.mainImage {
+    max-width: 100%;
+    max-height: 100%;
+    width: 500px;
+    height: fit-content;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(214, 214, 214);
+}
+
+.mainImageSquare {
+    width: 300px;
+    height: fit-content;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(214, 214, 214);
+}
+
+.x {
+    /* align-items: right; */
+    text-align: right;
+    cursor: pointer;
+}

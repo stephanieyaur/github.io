@@ -1,0 +1,43 @@
+#newsSearchEngineTop {
+    background-color: rgb(255, 58, 117);
+}
+
+.newsSearchEngine h4 {
+    color: rgb(255, 58, 117);
+}
+
+.newsSearchEngine h5 {
+    font-size: xx-large;
+    font-weight: 300;
+    color: rgb(255, 180, 202);
+    margin: 0;
+}
+
+h6 {
+    font-size: large;
+    font-weight: 300;
+    color: rgb(255, 180, 202);
+    margin-top: 0;
+    font-style: italic;
+}
+
+.leftPadding {
+    padding-left: 20px;
+}
+
+.textVertical {
+    align-self: center;
+}
+
+.textAndImageContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.textSection {
+    grid-column: 1;
+}
+
+.imageContainer {
+    grid-column: 2;
+}

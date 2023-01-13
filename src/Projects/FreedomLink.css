@@ -1,0 +1,25 @@
+.freedomlinktop{
+    background-color: #cfddfa;
+    color: black;
+}
+
+.freedomlinktop .description {
+    font-weight: normal !important;
+}
+
+.textInline > p{
+    font-weight: normal;
+}
+
+.freedomLink h4 {
+    color: #84adff;
+}
+
+h1 {
+    margin: 0;
+}
+
+#mail {
+    /* font-style: oblique; */
+    font-weight: bold;
+}
